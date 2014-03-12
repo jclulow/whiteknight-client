@@ -92,8 +92,12 @@ client.on('secureConnect', function() {
 
       case MSG_NEW_SESSION:
         _session_name = msgbuf.toString('ascii');
+        _log('');
         _log('your session id is ' + _session_name);
-        _log('starting bash...');
+        _log('');
+        _log('now, go to:  https://eng.joyent.com/whiteknight/');
+        _log('');
+        _log('');
         start_process();
         _log('');
         break;
