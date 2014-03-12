@@ -25,11 +25,9 @@ function _log(str)
   console.log(str);
 }
 
-//var SERVER_CERT = fs.readFileSync(path.join(__dirname, 'server.crt'));
 var client = tls.connect({
-  host: 'alpha.sysmgr.org',
-  port: 10502,
-  //ca: [ SERVER_CERT ]
+  host: 'eng.joyent.com',
+  port: 10502
 });
 
 var _connected = false;
